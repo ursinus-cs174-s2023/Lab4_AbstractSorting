@@ -1,15 +1,18 @@
 #include "comparable.h"
 
+#include <string>
+using namespace std;
+
 Comparable::~Comparable(){}
 
 /**
- * @brief Compare one CInt to another
+ * @brief Compare one CompInt to another
  * 
- * @param other Other CInt object
+ * @param other Other CompInt object
  * @return This int minus the other int
  */
-int CInt::compareTo(Comparable* other) {
-    CInt* cother = (CInt*)other;
+int CompInt::compareTo(Comparable* other) {
+    CompInt* cother = (CompInt*)other;
     return x - cother->x;
 }
 

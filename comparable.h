@@ -1,6 +1,9 @@
 #ifndef COMPARABLE_H
 #define COMPARABLE_H
 
+#include <string>
+using namespace std;
+
 class Comparable {
     public:
         /**
@@ -17,12 +20,12 @@ class Comparable {
         virtual ~Comparable();
 };
 
-class CInt: public Comparable {
+class CompInt: public Comparable {
     private:
         int x;
     public:
-        CInt(int x){this->x = x;}
-        ~CInt(){}
+        CompInt(int x){this->x = x;}
+        ~CompInt(){}
         int compareTo(Comparable* other);
 };
 
