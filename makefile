@@ -3,7 +3,7 @@ CFLAGS=-std=c++11 -g -Wall
 
 all: driver
 
-comparable.o: comparable.cpp
+comparable.o: comparable.cpp comparable.h
 	$(CC) $(CFLAGS) -c comparable.cpp
 
 driver: comparable.o driver.cpp
