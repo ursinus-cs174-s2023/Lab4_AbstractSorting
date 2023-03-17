@@ -1,6 +1,7 @@
 #include "comparable.h"
 
 #include <string>
+#include <iostream>
 using namespace std;
 
 Comparable::~Comparable(){}
@@ -14,6 +15,10 @@ Comparable::~Comparable(){}
 int CompInt::compareTo(Comparable* other) {
     CompInt* cother = (CompInt*)other;
     return x - cother->x;
+}
+
+void CompInt::print() {
+    cout << x;
 }
 
 /**

@@ -9,6 +9,11 @@ int main() {
     for (int i = 0; i < 10; i++) {
         cx[i] = new CompInt(x[i]);
     }
+    for (int i = 0; i < 10; i++) {
+        cout << i << ": ";
+        cx[i]->print();
+        cout << "\n";
+    }
     cout << "Min index is " << getMinIndex(cx, 10) << "\n";
     // Cleanup memory
     for (int i = 0; i < 10; i++) {

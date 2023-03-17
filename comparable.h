@@ -17,6 +17,7 @@ class Comparable {
          *         A positive number if this object is greater than the other
          */
         virtual int compareTo(Comparable* other)=0; // Pure virtual
+        virtual void print()=0; // Pure virtual
         virtual ~Comparable();
 };
 
@@ -27,6 +28,7 @@ class CompInt: public Comparable {
         CompInt(int x){this->x = x;}
         ~CompInt(){}
         int compareTo(Comparable* other);
+        void print();
 };
 
 /**
